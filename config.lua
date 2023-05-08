@@ -2,7 +2,8 @@
  THESE ARE EXAMPLE CONFIGS FEEL FREE TO CHANGE TO WHATEVER YOU WANT
  `lvim` is the global options object
 ]]
-reload("user.options")
+reload "user.options"
+reload "user.lualine"
 
 -- general
 -- lvim.log.level = "info"
@@ -45,7 +46,7 @@ lvim.builtin.treesitter.auto_install = true
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
 
 -- no need to set style = "lvim"
-local components = require("lvim.core.lualine.components")
+-- local components = require("lvim.core.lualine.components")
 
 -- lvim.builtin.lualine.sections.lualine_a = { "mode" }
 -- lvim.builtin.lualine.sections.lualine_c = {
@@ -54,13 +55,13 @@ local components = require("lvim.core.lualine.components")
 --     components.filename
 -- }
 
-lvim.builtin.lualine.sections.lualine_x = {
-  components.encoding,
-  components.diagnostics,
-  components.lsp,
-  components.spaces,
-  components.filetype
-}
+-- lvim.builtin.lualine.sections.lualine_x = {
+--   components.encoding,
+--   components.diagnostics,
+--   components.lsp,
+--   components.spaces,
+--   components.filetype
+-- }
 
 -- -- generic LSP settings <https://www.lunarvim.org/docs/languages#lsp-support>
 
