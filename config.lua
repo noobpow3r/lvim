@@ -4,6 +4,7 @@
 ]]
 reload "user.options"
 reload "user.lualine"
+reload "user.treesitter"
 
 -- general
 -- lvim.log.level = "info"
@@ -41,7 +42,7 @@ lvim.keys.insert_mode["jk"] = "<ESC>"
 -- lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
 -- Automatically install missing parsers when entering buffer
-lvim.builtin.treesitter.auto_install = true
+-- lvim.builtin.treesitter.auto_install = true
 
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
 
