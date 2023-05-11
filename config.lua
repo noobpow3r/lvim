@@ -5,6 +5,7 @@
 reload "user.options"
 reload "user.lualine"
 reload "user.treesitter"
+reload "user.keymaps"
 
 -- general
 -- lvim.log.level = "info"
@@ -17,16 +18,16 @@ reload "user.treesitter"
 -- lvim.use_icons = false
 
 -- keymappings <https://www.lunarvim.org/docs/configuration/keybindings>
-lvim.leader = "space"
+-- lvim.leader = "space"
 -- add your own keymapping
-lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+-- lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"
 -- lvim.keys.normal_mode["<S-h>"] = ":BufferLineCyclePrev<CR>"
 
 -- Exit Insert Mode
-lvim.keys.insert_mode["jj"] = "<ESC>"
-lvim.keys.insert_mode["jk"] = "<ESC>"
+-- lvim.keys.insert_mode["jj"] = "<ESC>"
+-- lvim.keys.insert_mode["jk"] = "<ESC>"
 
 -- -- Use which-key to add extra bindings with the leader-key prefix
 -- lvim.builtin.which_key.mappings["W"] = { "<cmd>noautocmd w<cr>", "Save without formatting" }
@@ -102,6 +103,7 @@ formatters.setup {
   },
   { command = "black" },
 }
+
 -- local linters = require "lvim.lsp.null-ls.linters"
 -- linters.setup {
 --   { command = "flake8", filetypes = { "python" } },
@@ -110,7 +112,6 @@ formatters.setup {
 --     args = { "--severity", "warning" },
 --   },
 -- }
-
 -- -- Additional Plugins <https://www.lunarvim.org/docs/plugins#user-plugins>
 -- lvim.plugins = {
 --     {
