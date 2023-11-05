@@ -48,6 +48,7 @@ formatters.setup {
     -- filetypes = { "typescript", "typescriptreact" },
   },
   { command = "black" },
+  { command = "rustfmt" },
 }
 
 -- local linters = require "lvim.lsp.null-ls.linters"
